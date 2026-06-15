@@ -30,7 +30,7 @@ export default function Portfolio() {
 					<h1 className='font-semibold text-lg tracking-wide'>AlanAlbertMn</h1>
 
 					<div className='hidden md:flex gap-8 text-sm'>
-						<a href='public/fullStackEng_AlanAlbert.pdf' download>
+						<a href='/fullStackEng_AlanAlbert.pdf' download>
 							Download CV
 						</a>
 						<a href='#projects' className='hover:text-blue-400'>
