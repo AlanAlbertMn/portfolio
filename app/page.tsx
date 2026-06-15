@@ -1,7 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import {
+	Github,
+	Linkedin,
+	Mail,
+	ExternalLink,
+	FileDownIcon,
+} from 'lucide-react';
 import { useState } from 'react';
 import { projects } from '@/assets/projects.js';
 
@@ -30,14 +36,14 @@ export default function Portfolio() {
 					<h1 className='font-semibold text-lg tracking-wide'>AlanAlbertMn</h1>
 
 					<div className='hidden md:flex gap-8 text-sm'>
-						<a href='/fullStackEng_AlanAlbert.pdf' download>
-							Download CV
-						</a>
 						<a href='#projects' className='hover:text-blue-400'>
 							Projects
 						</a>
 						<a href='#contact' className='hover:text-blue-400'>
 							Contact
+						</a>
+						<a href='/fullStackEng_AlanAlbert.pdf' download>
+							<FileDownIcon className='hover:text-blue-400' size={20} />
 						</a>
 					</div>
 
