@@ -53,7 +53,7 @@ export default function Portfolio() {
 			</nav>
 
 			{/* HERO */}
-			<section className='max-w-6xl mt-10 mx-auto px-6 pt-40 pb-32 text-center'>
+			<section className='max-w-6xl mt-10 mx-auto py-30 text-center'>
 				<motion.h1
 					variants={fadeUp}
 					initial='hidden'
@@ -70,11 +70,11 @@ export default function Portfolio() {
 					transition={{ delay: 0.2 }}
 					className='text-slate-400 max-w-2xl mx-auto text-lg mt-5 mb-10'
 				>
-					Full-Stack Software Engineer with 4 years of experience building
-					scalable, high-performance web applications. Specialized in React.js,
-					TypeScript, and modern UI development, with proven ability to optimize
-					performance, improve user experience and deliver features at scale in
-					agile teams.
+					Full-Stack Software Engineer with almost 5 years of experience
+					building scalable, high-performance web applications. Specialized in
+					React.js, TypeScript, and modern UI development, with proven ability
+					to optimize performance, improve user experience and deliver features
+					at scale in agile teams.
 				</motion.p>
 
 				<motion.div
@@ -98,44 +98,6 @@ export default function Portfolio() {
 						Contact
 					</a>
 				</motion.div>
-			</section>
-
-			{/* TECH STACK */}
-			<section className='max-w-6xl mx-auto px-6 py-24'>
-				<motion.h2
-					variants={fadeUp}
-					initial='hidden'
-					whileInView='show'
-					viewport={{ once: true }}
-					className='text-3xl font-semibold text-center mb-14'
-				>
-					Technologies
-				</motion.h2>
-
-				<div className='grid grid-cols-2 md:grid-cols-4 gap-6'>
-					{[
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'React',
-						'Next.js',
-						'Node.js',
-						'MongoDB',
-						'Tailwind',
-					].map(tech => (
-						<motion.div
-							key={tech}
-							variants={fadeUp}
-							initial='hidden'
-							whileInView='show'
-							viewport={{ once: true }}
-							whileHover={{ y: -6 }}
-							className='bg-slate-900 border border-slate-800 p-6 rounded-2xl text-center hover:border-blue-500 transition'
-						>
-							{tech}
-						</motion.div>
-					))}
-				</div>
 			</section>
 
 			{/* PROJECTS */}
@@ -168,7 +130,7 @@ export default function Portfolio() {
 							</p>
 
 							<div className='flex flex-wrap gap-2 mb-4'>
-								{project.tech.map(tech => (
+								{project.tech.map((tech) => (
 									<span
 										key={tech}
 										className='text-xs bg-slate-800 px-3 py-1 rounded-full'
@@ -182,6 +144,7 @@ export default function Portfolio() {
 								<a
 									className='flex items-center gap-1 hover:text-blue-400'
 									href={project.demoLink}
+									target='_blank'
 								>
 									<ExternalLink size={16} /> Demo
 								</a>
@@ -199,6 +162,43 @@ export default function Portfolio() {
 				</div>
 			</section>
 
+			{/* TECH STACK */}
+			<section className='max-w-6xl mx-auto px-6 py-24'>
+				<motion.h2
+					variants={fadeUp}
+					initial='hidden'
+					whileInView='show'
+					viewport={{ once: true }}
+					className='text-3xl font-semibold text-center mb-14'
+				>
+					Technologies
+				</motion.h2>
+
+				<div className='grid grid-cols-2 md:grid-cols-4 gap-6'>
+					{[
+						'HTML',
+						'CSS',
+						'JavaScript',
+						'React',
+						'Next.js',
+						'Node.js',
+						'MongoDB',
+						'Tailwind',
+					].map((tech) => (
+						<motion.div
+							key={tech}
+							variants={fadeUp}
+							initial='hidden'
+							whileInView='show'
+							viewport={{ once: true }}
+							whileHover={{ y: -6 }}
+							className='bg-slate-900 border border-slate-800 p-6 rounded-2xl text-center hover:border-blue-500 transition'
+						>
+							{tech}
+						</motion.div>
+					))}
+				</div>
+			</section>
 			{/* ABOUT */}
 			<section
 				id='contact'
