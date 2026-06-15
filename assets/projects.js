@@ -1,6 +1,6 @@
 export const projects = [
 	{
-		title: 'E-commerce TechPulse',
+		title: 'TechPulse | e-commerce',
 		description:
 			'Full e-commerce interface with user creation, login, persistent cart, product details, Stripe implementation and webhooks to create user orders.',
 		tech: [

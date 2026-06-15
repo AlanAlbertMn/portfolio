@@ -17,12 +17,12 @@ export default function Portfolio() {
 		<div className='relative bg-slate-950 text-slate-200 min-h-screen font-sans overflow-x-hidden'>
 			{/* BACKGROUND EFFECT */}
 			<div className='absolute inset-0 -z-10'>
-				<div className='absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-blue-600/20 blur-[120px] rounded-full' />
-				<div className='absolute bottom-0 right-0 w-[600px] h-[600px] bg-cyan-500/10 blur-[120px] rounded-full' />
+				<div className='absolute top-0 left-1/2 -translate-x-1/2 w-200 h-200 bg-blue-600/20 blur-[120px] rounded-full' />
+				<div className='absolute bottom-0 right-0 w-150 h-150 bg-cyan-500/10 blur-[120px] rounded-full' />
 			</div>
 
 			{/* GRID BACKGROUND */}
-			<div className='absolute inset-0 -z-20 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px]' />
+			<div className='absolute inset-0 -z-20 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[40px_40px]' />
 
 			{/* NAVBAR */}
 			<nav className='fixed top-0 w-full backdrop-blur border-b border-slate-800 bg-slate-950/70 z-50'>
@@ -30,6 +30,9 @@ export default function Portfolio() {
 					<h1 className='font-semibold text-lg tracking-wide'>AlanAlbertMn</h1>
 
 					<div className='hidden md:flex gap-8 text-sm'>
+						<a href='public/fullStackEng_AlanAlbert.pdf' download>
+							Download CV
+						</a>
 						<a href='#projects' className='hover:text-blue-400'>
 							Projects
 						</a>
@@ -53,7 +56,7 @@ export default function Portfolio() {
 			</nav>
 
 			{/* HERO */}
-			<section className='max-w-6xl mt-10 mx-auto py-30 text-center'>
+			<section className='max-w-6xl mt-10 mx-auto py-48 text-center'>
 				<motion.h1
 					variants={fadeUp}
 					initial='hidden'
@@ -101,7 +104,7 @@ export default function Portfolio() {
 			</section>
 
 			{/* PROJECTS */}
-			<section id='projects' className='max-w-6xl mx-auto px-6 py-24'>
+			<section id='projects' className='max-w-6xl mx-auto px-6 py-12'>
 				<motion.h2
 					variants={fadeUp}
 					initial='hidden'
